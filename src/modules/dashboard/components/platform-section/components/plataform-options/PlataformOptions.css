@@ -5,6 +5,7 @@
     border-radius: var(--border-radius-full);
     border: 1px solid var(--border-color);
     padding: 4px;
+    justify-content: space-between;
 }
 
 .platform-btn {
