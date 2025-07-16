@@ -14,6 +14,7 @@ export interface Streamer {
     channel_name: string;
     description: string;
     followers: number;
+    viewers: number;
 }
 
 export interface Game {
