@@ -1,11 +1,11 @@
 import "./HeaderMobile.css";
 import { Avatar, Button } from "..";
-import useAuthContext from "../../store/auth/hooks";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import { PanelTopClose, PanelTopOpen } from "lucide-react";
 import ToggleSwitchMinimalist from "../toogle-switch/ToogleSwitchMinimalist";
 import useViewport from "../../hooks/useViewport";
+import { useAuthContext } from "../../store/auth";
 
 const HeaderMobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

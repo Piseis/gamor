@@ -1,7 +1,7 @@
 import "./Header.css";
 import { Avatar, Button, ToogleSwitch } from "..";
-import useAuthContext from "../../store/auth/hooks";
 import { Link, useNavigate } from "react-router";
+import { useAuthContext } from "../../store/auth";
 
 const Header = () => {
     const navItems = [

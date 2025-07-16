@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
-import useAuthContext from "../../../../core/store/auth/hooks";
 import { Button } from "../../../../core/ui";
 import "./HeroSection.css";
+import { useAuthContext } from "../../../../core/store/auth";
 
 const HeroSection = () => {
     const { state } = useAuthContext();

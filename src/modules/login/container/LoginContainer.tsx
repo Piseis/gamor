@@ -2,9 +2,9 @@ import { FormProvider, useForm } from "react-hook-form";
 import { loginSchemaResolver, type LoginSchema } from "../schemas/loginSchema";
 import { login } from "../services/login";
 import { useNavigate } from "react-router";
-import useAuthContext from "../../../core/store/auth/hooks";
 import { useState } from "react";
 import LoginForm from "../components/login-form";
+import { useAuthContext } from "../../../core/store/auth";
 
 type FormData = LoginSchema;
 const defaultValues: FormData = {
