@@ -4,8 +4,8 @@ import "./LoginForm.css";
 import { Eye, EyeOff } from "lucide-react";
 import { useTheme } from "../../../../core/theme/context/ThemeContext";
 import { Button, Input, Notification } from "../../../../core/ui";
-import LoginFooter from "../login-footer/LoginFooter";
-import LoginHeader from "../login-header/LoginHeader";
+import LoginHeader from "../login-header";
+import LoginFooter from "../login-footer";
 
 interface Props {
     problemDetail?: string;
