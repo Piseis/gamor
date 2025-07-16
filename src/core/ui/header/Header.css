@@ -9,6 +9,16 @@
     height: var(--header-height);
 }
 
+[data-theme="dark"] .header-create-account {
+    background-color: #13161d;
+    border: 2px solid #2b2e35;
+    color: var(--withe);
+}
+
+[data-theme="dark"] .header-create-account:hover {
+    background-color: #1f2937;
+}
+
 .nav {
     display: flex;
     gap: var(--space-xl);

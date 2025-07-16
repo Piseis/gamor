@@ -52,7 +52,8 @@ const Header = () => {
                                     Sign in
                                 </Button>
                                 <Button
-                                    className="rounded"
+                                    variant="primary"
+                                    className="rounded header-create-account"
                                     size="large"
                                     onClick={() => navigate("register")}
                                 >
