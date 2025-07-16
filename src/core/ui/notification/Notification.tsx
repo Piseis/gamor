@@ -1,5 +1,5 @@
 import { useEffect, type FC } from "react";
-import styles from "./Notification.module.css";
+import "./Notification.css";
 import { X } from "lucide-react";
 
 interface Props {
@@ -27,9 +27,9 @@ const Notification: FC<Props> = ({
     }, [autoClose, autoCloseDuration, onClose]);
 
     return (
-        <div className={`${styles.notification} ${styles[type]}`}>
-            <div className={styles.message}>{message}</div>
-            <button onClick={onClose} className={styles.closeButton}>
+        <div className={`notification ${type}`}>
+            <div className="message">{message}</div>
+            <button onClick={onClose} className="close-button">
                 <X size={18} />
             </button>
         </div>
