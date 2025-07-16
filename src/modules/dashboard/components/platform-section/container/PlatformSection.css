@@ -64,3 +64,9 @@
     width: 100%;
     box-shadow: 0px 30px 10px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 1010px) {
+    .platform-section {
+        border-radius: 0 0 1rem 1rem;
+    }
+}

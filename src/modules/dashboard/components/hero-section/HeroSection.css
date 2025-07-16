@@ -53,3 +53,9 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 1010px) {
+    .hero-section {
+        border-radius: 1rem 1rem 0 0;
+    }
+}
