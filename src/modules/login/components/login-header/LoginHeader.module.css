@@ -1,0 +1,35 @@
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-lighter);
+    margin-bottom: var(--space-xl);
+    transition: color 0.3s ease;
+}
+
+.backLink:hover {
+    color: var(--text-color);
+}
+
+.backIcon {
+    width: var(--space-md);
+    height: var(--space-md);
+    margin-right: var(--space-sm);
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: var(--space-md);
+}
+
+.description {
+    color: var(--text-lighter);
+}

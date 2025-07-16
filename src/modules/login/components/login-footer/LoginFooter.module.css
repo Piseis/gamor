@@ -1,0 +1,14 @@
+.signupText {
+    text-align: center;
+    color: var(--text-lighter);
+}
+
+.signupLink {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signupLink:hover {
+    color: var(--accent-color);
+}

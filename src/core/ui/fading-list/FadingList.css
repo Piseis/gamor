@@ -1,0 +1,27 @@
+.fading-list-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fading-list {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.fading-list.at-bottom {
+    padding-bottom: 0;
+}

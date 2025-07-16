@@ -1,0 +1,14 @@
+.main-content {
+    padding: var(--space-xl) 0;
+}
+
+.content-grid {
+    display: grid;
+}
+
+@media (min-width: 1024px) {
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}

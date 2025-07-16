@@ -1,0 +1,19 @@
+.platform-options {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    border-radius: var(--border-radius-full);
+    border: 1px solid var(--border-color);
+    padding: 4px;
+}
+
+.platform-btn {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-full);
+}
+
+.active {
+    background-color: var(--toggle-bg);
+    font-weight: 600;
+    color: var(--text-color);
+}

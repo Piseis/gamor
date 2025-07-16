@@ -1,0 +1,128 @@
+.header {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.nav.mobile {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md) 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--text-light);
+    font-weight: 500;
+    padding-bottom: var(--space-md);
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+}
+
+.nav-link.active {
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blurred-circle {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(--bg-color, 1); /* Color con transparencia */
+    filter: blur(2px); /* Ajusta este valor para más/menos difuminado */
+    left: 1px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: var(--space-sm);
+    z-index: 1001;
+}
+
+.menu-toggle:hover {
+    color: var(--text-color);
+}
+
+@media (max-width: 875px) {
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin-left: var(--space-md);
+        order: -1;
+    }
+
+    .nav-link.active::after {
+        width: 20%;
+        left: 40%;
+    }
+}

@@ -1,0 +1,30 @@
+.search-modal-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.search-modal-checkbox {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--border-dark);
+    border-radius: var(--border-radius-sm);
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-modal-checkbox:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.search-modal-checkbox:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.75rem;
+}

@@ -1,0 +1,66 @@
+.platform-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--border-radius-right-lg);
+    height: 622px;
+}
+
+.card {
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    padding: var(--space-md);
+    background-color: var(--card-bg);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.step-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.step-number {
+    color: var(--text-lighter);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: var(--space-xs);
+    margin-bottom: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: var(--space-sm);
+    padding-right: var(--space-xl);
+    border: 1px solid var(--border-dark);
+    border-radius: var(--border-radius-md);
+    font-size: 1rem;
+}
+
+.search-icon {
+    position: absolute;
+    right: var(--space-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-lighter);
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.players-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.search-btn {
+    width: 100%;
+    box-shadow: 0px 30px 10px rgba(0, 0, 0, 0.1);
+}

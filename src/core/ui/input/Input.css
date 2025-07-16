@@ -1,0 +1,25 @@
+.input {
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.1);
+}
+
+.input-error {
+    border-color: var(--error);
+}
+
+.error-message {
+    margin-top: var(--space-xs);
+    font-size: 0.875rem;
+    color: var(--error);
+}

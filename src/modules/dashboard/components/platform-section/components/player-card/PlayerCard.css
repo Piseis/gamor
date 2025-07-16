@@ -1,0 +1,52 @@
+.player-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm);
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-md);
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.player-number {
+    color: var(--text-lighter);
+    font-weight: 500;
+}
+
+.player-name {
+    font-weight: 500;
+}
+
+.status-indicators {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: var(--border-radius-full);
+}
+
+.status-dot.online {
+    background-color: var(--online-color);
+}
+
+.status-dot.online-blue {
+    background-color: var(--online-blue);
+}
+
+.status-dot.offline {
+    background-color: var(--offline-color);
+}
+
+.add-btn {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+}

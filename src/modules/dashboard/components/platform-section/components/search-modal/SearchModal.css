@@ -1,0 +1,219 @@
+.search-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+.search-modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    width: 90%;
+    max-width: 56rem;
+    max-height: 90vh;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-dark);
+    color: var(--text-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+.search-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.search-modal-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.search-modal-close {
+    background: none;
+    border: none;
+    color: var(--text-lighter);
+    cursor: pointer;
+    padding: var(--space-xs);
+}
+
+.search-modal-close:hover {
+    color: var(--text-white);
+}
+
+.search-modal-body {
+    padding: var(--space-md) var(--space-lg);
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-modal-section {
+    margin-bottom: var(--space-xl);
+}
+
+.search-modal-label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-white);
+}
+
+.search-modal-input {
+    width: 100%;
+    padding: var(--space-md);
+    background-color: var(--bg-dark-secondary);
+    border: 1px solid var(--border-dark);
+    color: var(--text-white);
+    border-radius: var(--border-radius-sm);
+}
+
+.search-modal-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.2);
+}
+
+.search-modal-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}
+
+.search-modal-checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .search-modal-checkbox-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .search-modal-checkbox-group {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.search-modal-selected-categories {
+    margin-top: var(--space-md);
+    padding: var(--space-sm);
+    background-color: var(--bg-dark-secondary);
+    border-radius: var(--border-radius-sm);
+}
+
+.search-modal-selected-title {
+    font-size: 0.875rem;
+    color: var(--text-lighter);
+    margin-bottom: var(--space-xs);
+}
+
+.search-modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.search-modal-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.75rem;
+    border-radius: var(--border-radius-full);
+}
+
+.search-modal-tag-remove {
+    margin-left: var(--space-xs);
+    cursor: pointer;
+}
+
+.search-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    border-top: 1px solid var(--border-dark);
+}
+
+.search-modal-button {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-modal-button-reset {
+    background: none;
+    border: 1px solid var(--border-dark);
+    color: var(--text-lighter);
+}
+
+.search-modal-button-reset:hover {
+    background-color: var(--bg-dark-secondary);
+    color: var(--text-white);
+}
+
+.search-modal-button-cancel {
+    background: none;
+    border: none;
+    color: var(--text-lighter);
+}
+
+.search-modal-button-cancel:hover {
+    color: var(--text-white);
+}
+
+.search-modal-button-search {
+    background: linear-gradient(
+        to right,
+        var(--secondary-color),
+        var(--accent-color)
+    );
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.search-modal-button-search:hover {
+    background: linear-gradient(
+        to right,
+        var(--accent-color),
+        var(--secondary-color)
+    );
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
