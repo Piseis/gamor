@@ -1,16 +1,18 @@
 import "./PlatformSection.css";
-import PlataformOptions from "../components/plataform-options/PlataformOptions";
-import PlatformSearchGame from "../components/platform-search-game/PlatformSearchGame";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import {
     searchSchemaResolver,
     type SearchSchema,
 } from "../schemas/searchSchema";
-import SearchModal from "../components/search-modal/SearchModal";
 import { filterStreamers } from "../services/filterStreamers";
 import type { Streamer } from "../../../types/game";
 import useStreamerContext from "../../../store/hooks";
+import {
+    PlatformSearchGame,
+    PlatformOptions,
+    SearchModal,
+} from "../components";
 
 type FormData = SearchSchema;
 const defaultValues: FormData = {
@@ -42,7 +44,7 @@ const PlatformSection = () => {
         <FormProvider {...form}>
             <form onSubmit={form.handleSubmit(onHandleSubmit)}>
                 <div className="platform-section">
-                    <PlataformOptions />
+                    <PlatformOptions />
                     <PlatformSearchGame
                         players={players}
                         openModal={() => setIsSearchModalOpen(true)}

@@ -44,8 +44,6 @@ const PlatformSearchGame: FC<Props> = ({ openModal, players }) => {
         <PlayerCard key={player.id} player={player} index={index} />
     ));
 
-    console.log(form.formState.isSubmitting);
-
     if (form.formState.isSubmitting) {
         playersCards = [];
         playersCards.push(<span>Loading...</span>);
