@@ -1,6 +1,6 @@
 import MainLayout from "../../../core/ui/main-layout/MainLayout";
 import MainContent from "../components/main-content";
-import StreamerProvider from "../store/provider";
+import { StreamerProvider } from "../store";
 
 const DashboardPage = () => {
     return (

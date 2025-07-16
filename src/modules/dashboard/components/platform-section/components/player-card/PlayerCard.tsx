@@ -4,7 +4,7 @@ import { Plus } from "lucide-react";
 import Avatar from "../../../../../../core/ui/avatar";
 import Button from "../../../../../../core/ui/button";
 import type { Streamer } from "../../../../types/game";
-import useStreamerContext from "../../../../store/hooks";
+import { useStreamerContext } from "../../../../store";
 
 interface Props {
     player: Streamer;

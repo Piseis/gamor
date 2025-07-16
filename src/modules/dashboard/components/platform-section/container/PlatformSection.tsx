@@ -7,12 +7,12 @@ import {
 } from "../schemas/searchSchema";
 import { filterStreamers } from "../services/filterStreamers";
 import type { Streamer } from "../../../types/game";
-import useStreamerContext from "../../../store/hooks";
 import {
     PlatformSearchGame,
     PlatformOptions,
     SearchModal,
 } from "../components";
+import { useStreamerContext } from "../../../store";
 
 type FormData = SearchSchema;
 const defaultValues: FormData = {

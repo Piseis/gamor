@@ -1,4 +1,4 @@
-import useStreamerContext from "../../store/hooks";
+import { useStreamerContext } from "../../store";
 import HeroSection from "../hero-section";
 import PlatformSection from "../platform-section";
 import { PresentationCard, PresentationStaticCard } from "../presentation-card";
