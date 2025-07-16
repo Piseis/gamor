@@ -1,30 +1,22 @@
 import { Users, Play, Heart, Eye } from "lucide-react";
 import "./PresentationCard.css";
 import { Avatar, Button } from "../../../../../core/ui";
-
-interface Streamer {
-    channel_name: string;
-    description: string;
-    followers: number;
-    username: string;
-    isLive?: boolean;
-    viewers?: number;
-    category?: string;
-}
+import type { Streamer } from "../../../types/game";
 
 interface Props {
     player: Streamer;
+    isLive?: boolean;
 }
 
-const PresentationCard = ({ player }: Props) => {
+const PresentationCard = ({ player, isLive = true }: Props) => {
     const {
         channel_name,
         description,
         followers,
         username,
-        isLive = true,
         viewers = 1245,
-        category = "Action",
+        gameCategories,
+        game,
     } = player;
 
     const formatFollowers = (count: number) => {
@@ -55,10 +47,16 @@ const PresentationCard = ({ player }: Props) => {
                     </div>
                 </div>
 
-                <div className="category-badge">
-                    <span className="category-badge-content">{category}</span>
+                <div className="category-container">
+                    {gameCategories?.map((category) => (
+                        <div className="category-badge" key={category}>
+                            <span className="category-badge-content">
+                                #{category}
+                            </span>
+                        </div>
+                    ))}
                 </div>
-
+                <h4>{game}</h4>
                 <div className="card-description">
                     <p className="description-text">{description}</p>
                 </div>

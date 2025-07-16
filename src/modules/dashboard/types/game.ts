@@ -15,6 +15,9 @@ export interface Streamer {
     description: string;
     followers: number;
     viewers: number;
+    game?: string;
+    gameCategories?: string[];
+    gamePlatforms?: string[];
 }
 
 export interface Game {

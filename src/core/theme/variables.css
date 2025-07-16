@@ -3,6 +3,7 @@
     --primary-color-deg: #1f2937;
     --secondary-color: #7e33ef;
     --accent-color: #fe8944;
+    --accent-color-deg: #8845ed;
     --text-color: #111827;
     --text-light: #4b5563;
     --text-lighter: #9ca3af;
@@ -42,6 +43,7 @@
     --primary-color-deg: #d1d5db;
     --secondary-color: #fe8944;
     --accent-color: #7e33ef;
+    --accent-color-deg: #ff9f68;
     --text-color: #f3f4f6;
     --text-light: #d1d5db;
     --text-lighter: #9ca3af;

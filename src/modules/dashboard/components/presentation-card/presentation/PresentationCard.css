@@ -102,6 +102,17 @@
 
 .category-badge {
     margin-bottom: var(--space-md);
+    border-radius: var(--border-radius-full);
+    background-color: var(--accent-color-deg);
+    padding: 7px;
+    width: fit-content;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.category-container {
+    display: flex;
+    column-gap: var(--space-sm);
 }
 
 .card-description {
