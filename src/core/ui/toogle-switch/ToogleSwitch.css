@@ -39,6 +39,10 @@
     transition: 0.4s;
 }
 
+[data-theme="dark"] .theme-btn:hover {
+    background-color: #1f2937;
+}
+
 input:checked + .slider {
     background-color: var(--secondary-color);
 }

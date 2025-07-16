@@ -6,7 +6,12 @@ const ToggleSwitchMinimalist = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <Button variant="outline" size="medium" onClick={toggleTheme}>
+        <Button
+            variant="outline"
+            size="medium"
+            onClick={toggleTheme}
+            className="theme-btn"
+        >
             {theme === "dark" ? <Moon /> : <Sun />}
         </Button>
     );
