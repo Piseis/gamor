@@ -1,4 +1,4 @@
-.loginContainer {
+.login-container {
     min-height: 100vh;
     background-color: var(--bg-color);
     display: flex;
@@ -8,7 +8,7 @@
     transition: all 0.3s ease;
 }
 
-.loginWrapper {
+.login-wrapper {
     max-width: 28rem;
     width: 100%;
     display: flex;
@@ -26,7 +26,7 @@
     gap: var(--space-xl);
 }
 
-.formGroup {
+.form-group {
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +38,7 @@
     margin-bottom: var(--space-sm);
 }
 
-.passwordInputWrapper {
+.password-input-wrapper {
     position: relative;
     margin-top: var(--space-sm);
     justify-content: space-between;
@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-.passwordToggle {
+.password-toggle {
     position: absolute;
     right: var(--space-md);
     top: 50%;
@@ -56,33 +56,33 @@
     transition: color 0.3s ease;
 }
 
-.passwordToggle:hover {
+.password-toggle:hover {
     color: var(--text-color);
 }
 
-.rememberMeContainer {
+.remember-me-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.checkboxGroup {
+.checkbox-group {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
 }
 
-.forgotPasswordLink {
+.forgot-password-link {
     color: var(--secondary-color);
     font-size: 0.875rem;
     transition: color 0.3s ease;
 }
 
-.forgotPasswordLink:hover {
+.forgot-password-link:hover {
     color: var(--accent-color);
 }
 
-.submitButton {
+.submit-button {
     width: 100%;
     padding: var(--space-md);
     background: linear-gradient(
@@ -98,7 +98,7 @@
     transition: all 0.3s ease;
 }
 
-.submitButton:hover {
+.submit-button:hover {
     background: linear-gradient(
         to right,
         var(--accent-color),
@@ -108,7 +108,7 @@
     box-shadow: var(--shadow);
 }
 
-.submitButton:disabled {
+.submit-button:disabled {
     opacity: 0.7;
     cursor: not-allowed;
     transform: none;
@@ -120,7 +120,7 @@
     margin: var(--space-xl) 0;
 }
 
-.dividerLine {
+.divider-line {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -131,7 +131,7 @@
     border-top: 1px solid var(--border-color);
 }
 
-.dividerText {
+.divider-text {
     position: relative;
     padding: 0 var(--space-sm);
     background-color: var(--bg-color);
@@ -139,13 +139,13 @@
     font-size: 0.875rem;
 }
 
-.socialButtons {
+.social-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
 }
 
-.socialButton {
+.social-button {
     padding: var(--space-md);
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -158,12 +158,12 @@
     transition: all 0.3s ease;
 }
 
-.socialButton:hover {
+.social-button:hover {
     background-color: var(--bg-color);
     border-color: var(--secondary-color);
 }
 
-.socialIcon {
+.social-icon {
     width: 1.25rem;
     height: 1.25rem;
     margin-right: var(--space-sm);

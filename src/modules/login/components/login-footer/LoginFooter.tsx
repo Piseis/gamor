@@ -1,12 +1,12 @@
 import { Link } from "react-router";
-import styles from "./LoginFooter.module.css";
+import "./LoginFooter.css";
 
 const LoginFooter = () => {
     return (
-        <div className={styles.signupText}>
+        <div className="signup-text">
             <p>
                 {"Don't have an account? "}
-                <Link to="/register" className={styles.signupLink}>
+                <Link to="/register" className="signup-link">
                     Sign up
                 </Link>
             </p>

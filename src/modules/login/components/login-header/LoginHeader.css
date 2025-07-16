@@ -1,4 +1,4 @@
-.backLink {
+.back-link {
     display: inline-flex;
     align-items: center;
     color: var(--text-lighter);
@@ -6,11 +6,11 @@
     transition: color 0.3s ease;
 }
 
-.backLink:hover {
+.back-link:hover {
     color: var(--text-color);
 }
 
-.backIcon {
+.back-icon {
     width: var(--space-md);
     height: var(--space-md);
     margin-right: var(--space-sm);

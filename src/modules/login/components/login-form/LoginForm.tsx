@@ -1,6 +1,6 @@
 import { useEffect, useState, type FC } from "react";
 import { useFormContext } from "react-hook-form";
-import styles from "./LoginForm.module.css";
+import "./LoginForm.css";
 import { Eye, EyeOff } from "lucide-react";
 import { useTheme } from "../../../../core/theme/context/ThemeContext";
 import { Button, Input, Notification } from "../../../../core/ui";
@@ -30,8 +30,8 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
     };
 
     return (
-        <div className={styles.loginContainer} data-theme={theme}>
-            <div className={styles.loginWrapper}>
+        <div className="login-container" data-theme={theme}>
+            <div className="login-wrapper">
                 <LoginHeader />
                 {showNotification && problemDetail && (
                     <Notification
@@ -42,9 +42,9 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                         autoCloseDuration={5000}
                     />
                 )}
-                <div className={styles.form}>
-                    <div className={styles.formGroup}>
-                        <label htmlFor="username" className={styles.label}>
+                <form className="form">
+                    <div className="form-group">
+                        <label htmlFor="username" className="label">
                             Username
                         </label>
                         <Input
@@ -55,11 +55,11 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                         />
                     </div>
 
-                    <div className={styles.formGroup}>
-                        <label htmlFor="password" className={styles.label}>
+                    <div className="form-group">
+                        <label htmlFor="password" className="label">
                             Password
                         </label>
-                        <div className={styles.passwordInputWrapper}>
+                        <div className="password-input-wrapper">
                             <Input
                                 control={form.control}
                                 name="password"
@@ -70,7 +70,7 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                             <Button
                                 variant="ghost"
                                 onClick={() => setShowPassword(!showPassword)}
-                                className={styles.passwordToggle}
+                                className="password-toggle"
                             >
                                 {showPassword ? (
                                     <EyeOff size={20} />
@@ -84,13 +84,13 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                     <Button
                         type="submit"
                         disabled={form.formState.isSubmitting}
-                        className={styles.submitButton}
+                        className="submit-button"
                     >
                         {form.formState.isSubmitting
                             ? "Signing in..."
                             : "Sign In"}
                     </Button>
-                </div>
+                </form>
                 <LoginFooter />
             </div>
         </div>
