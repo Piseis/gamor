@@ -4,8 +4,8 @@ import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import { PanelTopClose, PanelTopOpen } from "lucide-react";
 import ToggleSwitchMinimalist from "../toogle-switch/ToogleSwitchMinimalist";
-import useViewport from "../../hooks/useViewport";
 import { useAuthContext } from "../../store/auth";
+import { useViewPort } from "../../hooks";
 
 const HeaderMobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ const HeaderMobile = () => {
     ];
 
     const { state } = useAuthContext();
-    const { isMobile } = useViewport();
+    const { isMobile } = useViewPort();
 
     useEffect(() => {
         if (!isMobile) {
