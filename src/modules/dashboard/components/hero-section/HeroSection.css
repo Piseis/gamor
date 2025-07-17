@@ -40,6 +40,15 @@
     background-color: #ebf0f6;
 }
 
+.stream-party-text {
+    font-weight: 600;
+    color: var(--primary-color);
+    display: inline-block;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 7px;
+    line-height: 1.2;
+}
+
 [data-theme="dark"] .create-account:hover {
     background-color: var(--border-color);
 }

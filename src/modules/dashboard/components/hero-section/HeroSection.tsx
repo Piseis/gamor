@@ -13,7 +13,10 @@ const HeroSection = () => {
                 start <span className="highlight">streaming</span> games
                 differently
             </h1>
-            <p className="hero-subtitle">gamor now has stream party platform</p>
+            <p className="hero-subtitle">
+                gamor now has{" "}
+                <span className="stream-party-text">stream party</span> platform
+            </p>
             {!state.user && (
                 <div className="hero-actions">
                     <Button
