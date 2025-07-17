@@ -25,7 +25,8 @@
 }
 
 .nav.mobile {
-    position: fixed;
+    position: absolute;
+    height: auto;
     top: var(--header-height);
     left: 0;
     width: 100%;
