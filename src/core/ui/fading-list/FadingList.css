@@ -7,10 +7,15 @@
 
 .fading-list {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     padding: 10px;
     position: relative;
-    scroll-behavior: smooth;
+}
+
+.fading-list::-webkit-scrollbar {
+    display: none;
 }
 
 .fade-bottom {
