@@ -43,7 +43,7 @@
     background-color: #1f2937;
 }
 
-input:checked + .slider {
+input + .slider {
     background-color: var(--secondary-color);
 }
 
