@@ -68,6 +68,7 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                                 error={form.formState.errors.password?.message}
                             />
                             <Button
+                                type="button"
                                 variant="ghost"
                                 onClick={() => setShowPassword(!showPassword)}
                                 className="password-toggle"

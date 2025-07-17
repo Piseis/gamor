@@ -51,13 +51,13 @@
     right: var(--space-md);
     top: 50%;
     transform: translateY(-50%);
-    color: var(--text-lighter);
+    color: #9ca3af;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .password-toggle:hover {
-    color: var(--text-color);
+    color: #111827;
 }
 
 .remember-me-container {
