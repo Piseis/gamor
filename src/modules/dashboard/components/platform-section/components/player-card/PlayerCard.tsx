@@ -1,7 +1,6 @@
 import { type FC } from "react";
 import "./PlayerCard.css";
 import { Plus } from "lucide-react";
-import Avatar from "../../../../../../core/ui/avatar";
 import Button from "../../../../../../core/ui/button";
 import type { Streamer } from "../../../../types/game";
 import { useStreamerContext } from "../../../../store";
@@ -22,11 +21,6 @@ const PlayerCard: FC<Props> = ({ player, index }) => {
         <div className="player-card">
             <div className="player-info">
                 <span className="player-number">{index + 1}</span>
-                <Avatar
-                    alt={player.username}
-                    fallback={player.username[0]}
-                    size="sm"
-                />
                 <span className="player-name">{player.username}</span>
             </div>
 

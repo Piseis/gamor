@@ -16,6 +16,19 @@
 .player-number {
     color: var(--text-lighter);
     font-weight: 500;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: var(--bg-color-secondary);
+}
+
+[data-theme="dark"] .player-number {
+    background-color: #13161d;
+    border: none;
 }
 
 .player-name {
@@ -49,4 +62,18 @@
     width: 2rem;
     height: 2rem;
     padding: 0;
+    background-color: var(--bg-color);
+    border: none;
+}
+
+.add-btn:hover {
+    background-color: var(--bg-color-secondary);
+}
+
+[data-theme="dark"] .add-btn {
+    background-color: var(--white);
+}
+
+[data-theme="dark"] .add-btn:hover {
+    background-color: var(--border-color);
 }
