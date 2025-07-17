@@ -47,18 +47,18 @@ const PresentationCard = ({ player, isLive = true }: Props) => {
                     </div>
                 </div>
 
-                <div className="category-container">
-                    {gameCategories?.map((category) => (
-                        <div className="category-badge" key={category}>
-                            <span className="category-badge-content">
-                                #{category}
-                            </span>
-                        </div>
-                    ))}
-                </div>
                 <h4>{game}</h4>
                 <div className="card-description">
                     <p className="description-text">{description}</p>
+                </div>
+                <div className="category-container">
+                    {gameCategories?.map((category) => (
+                        <ul key={category}>
+                            <span className="category-badge-content">
+                                #{category}
+                            </span>
+                        </ul>
+                    ))}
                 </div>
 
                 <div className="stats-grid">
