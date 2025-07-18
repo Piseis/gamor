@@ -32,7 +32,7 @@ Gamor is a modern, modular game streaming platform built with React, TypeScript,
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/gamor.git
+git clone https://github.com/Piseis/gamor.git
 cd gamor
 npm install
 ```
