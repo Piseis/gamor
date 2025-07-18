@@ -42,56 +42,52 @@ export const LoginForm: FC<Props> = ({ problemDetail, resetProblemDetail }) => {
                         autoCloseDuration={5000}
                     />
                 )}
-                <form className="form">
-                    <div className="form-group">
-                        <label htmlFor="username" className="label">
-                            Username
-                        </label>
+                <div className="form-group">
+                    <label htmlFor="username" className="label">
+                        Username
+                    </label>
+                    <Input
+                        control={form.control}
+                        name="username"
+                        placeholder="Enter your username"
+                        error={form.formState.errors.username?.message}
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="password" className="label">
+                        Password
+                    </label>
+                    <div className="password-input-wrapper">
                         <Input
                             control={form.control}
-                            name="username"
-                            placeholder="Enter your username"
-                            error={form.formState.errors.username?.message}
+                            name="password"
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Enter your password"
+                            error={form.formState.errors.password?.message}
                         />
+                        <Button
+                            type="button"
+                            variant="ghost"
+                            onClick={() => setShowPassword(!showPassword)}
+                            className="password-toggle"
+                        >
+                            {showPassword ? (
+                                <EyeOff size={20} />
+                            ) : (
+                                <Eye size={20} />
+                            )}
+                        </Button>
                     </div>
+                </div>
 
-                    <div className="form-group">
-                        <label htmlFor="password" className="label">
-                            Password
-                        </label>
-                        <div className="password-input-wrapper">
-                            <Input
-                                control={form.control}
-                                name="password"
-                                type={showPassword ? "text" : "password"}
-                                placeholder="Enter your password"
-                                error={form.formState.errors.password?.message}
-                            />
-                            <Button
-                                type="button"
-                                variant="ghost"
-                                onClick={() => setShowPassword(!showPassword)}
-                                className="password-toggle"
-                            >
-                                {showPassword ? (
-                                    <EyeOff size={20} />
-                                ) : (
-                                    <Eye size={20} />
-                                )}
-                            </Button>
-                        </div>
-                    </div>
-
-                    <Button
-                        type="submit"
-                        disabled={form.formState.isSubmitting}
-                        className="submit-button"
-                    >
-                        {form.formState.isSubmitting
-                            ? "Signing in..."
-                            : "Sign In"}
-                    </Button>
-                </form>
+                <Button
+                    type="submit"
+                    disabled={form.formState.isSubmitting}
+                    className="submit-button"
+                >
+                    {form.formState.isSubmitting ? "Signing in..." : "Sign In"}
+                </Button>
                 <LoginFooter />
             </div>
         </div>
