@@ -35,29 +35,6 @@
     font-weight: 500;
 }
 
-.status-indicators {
-    display: flex;
-    gap: var(--space-xs);
-}
-
-.status-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: var(--border-radius-full);
-}
-
-.status-dot.online {
-    background-color: var(--online-color);
-}
-
-.status-dot.online-blue {
-    background-color: var(--online-blue);
-}
-
-.status-dot.offline {
-    background-color: var(--offline-color);
-}
-
 .add-btn {
     width: 2rem;
     height: 2rem;

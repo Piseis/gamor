@@ -34,15 +34,6 @@
     margin-bottom: 10px;
 }
 
-.search-input {
-    width: 100%;
-    padding: var(--space-sm);
-    padding-right: var(--space-xl);
-    border: 1px solid var(--border-dark);
-    border-radius: var(--border-radius-md);
-    font-size: 1rem;
-}
-
 .search-icon {
     position: absolute;
     right: var(--space-sm);
@@ -51,13 +42,6 @@
     color: var(--text-lighter);
     width: 1.25rem;
     height: 1.25rem;
-}
-
-.players-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-lg);
 }
 
 .search-btn {
