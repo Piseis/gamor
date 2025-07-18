@@ -23,16 +23,31 @@ Gamor is a modern, modular game streaming platform built with React, TypeScript,
 -   [Lucide React](https://lucide.dev/) (icons)
 -   Custom CSS for theming and layout
 
+## 📁 Project Structure
+
+```
+src/
+  core/         # Shared utilities, UI, routing, theming, state
+  modules/
+    dashboard/  # Main dashboard and streamer discovery
+    login/      # Login flow
+    register/   # Registration flow
+  assets/       # Static assets
+  App.tsx       # App entry point
+  main.tsx      # Vite entry point
+```
+
 ## ⚡ Getting Started
 
 ### Prerequisites
 
 -   Node.js (v18+ recommended)
+-   npm or yarn
 
 ### Installation
 
 ```bash
-git clone https://github.com/Piseis/gamor.git
+git clone https://github.com/your-username/gamor.git
 cd gamor
 npm install
 ```
@@ -50,3 +65,32 @@ Open [http://localhost:5173](http://localhost:5173) to view the app.
 ```bash
 npm run build
 ```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## 🧪 Test Credentials
+
+For demo/testing purposes, you can use the following credentials to log in:
+
+```
+Username: Gamer
+Password: s3cur3p455w0rd
+```
+
+## ✨ Customization
+
+-   **Theming**: Edit `src/core/theme/` for custom themes.
+-   **Routing**: Update routes in `src/core/router/route.ts`.
+-   **Streamer Logic**: Extend streamer features in `src/modules/dashboard/`.
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+[MIT](LICENSE)
