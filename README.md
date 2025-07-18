@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+# Gamor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gamor is a modern, modular game streaming platform built with React, TypeScript, and Vite. It enables users to discover, filter, and connect with game streamers, featuring a unique "stream party" experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Game Streaming Dashboard**: Discover and interact with streamers.
+-   **Stream Party Platform**: Join or create collaborative streaming sessions.
+-   **Authentication**: Secure login and registration flows.
+-   **Streamer Discovery**: Filter streamers by platform and categories.
+-   **Modern UI**: Responsive, themeable interface with dark/light mode.
+-   **Form Validation**: Robust forms using React Hook Form and Zod.
+-   **Trending Categories**: Explore popular game genres and streamers.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   [React 19](https://react.dev/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Vite](https://vitejs.dev/)
+-   [React Router](https://reactrouter.com/)
+-   [React Hook Form](https://react-hook-form.com/)
+-   [Zod](https://zod.dev/) (schema validation)
+-   [Lucide React](https://lucide.dev/) (icons)
+-   Custom CSS for theming and layout
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚡ Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   Node.js (v18+ recommended)
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/gamor.git
+cd gamor
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run dev
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build
+
+```bash
+npm run build
 ```
